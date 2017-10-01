@@ -50,7 +50,7 @@
         { avatar: '/static/images/austin.jpg', title: 'Mufassah', subtitle: 'Admin/Web Designer' },
         { avatar: '/static/images/evers.jpg', title: 'Evers', subtitle: 'Player' },
         { avatar: '/static/images/slightlygifted.jpg', title: 'Slightly Gifted', subtitle: 'Player' },
-        { avatar: '/static/images/amber.jpg', title: 'Amber', subtitle: 'Admin/Community Manager' },
+        { avatar: '/static/images/amber.jpg', title: 'Amber', subtitle: 'Admin' },
         { avatar: '/static/images/apuithy.jpg', title: 'Apuithy', subtitle: 'Player' },
         { avatar: '/static/images/blightful.jpg', title: 'Blightful', subtitle: 'Player' },
         { avatar: '/static/images/cyn.jpg', title: 'Cyn', subtitle: 'Admin/Designer' },
