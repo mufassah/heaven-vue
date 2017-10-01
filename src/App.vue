@@ -6,7 +6,7 @@
         <a class="heaven-clan nav-logo" href="/#/"><div class="logo-flex"><div class="heaven-yellow">HEAVEN &nbsp;</div><div class="heaven-white">CLAN</div></div></a>
       </div>
       <div class="nav-flex2">
-        <div class="nav-items"><a class="nav-link" ui-sref="team">TEAM</a></div>
+        <div class="nav-items"><a class="nav-link" href="/#/roster">TEAM</a></div>
         <div class="nav-items"><a class="nav-link" href="/#/news">NEWS</a></div>
         <div class="nav-items"><a class="nav-link" ui-sref="about">ABOUT</a></div>
         <div class="nav-items"><a class="nav-link" href="/#/watch">WATCH</a></div>
