@@ -6,10 +6,10 @@
 
           <v-toolbar-title>
             <v-text-field
-              label="Filter"
-              v-model="search"
-              box
-              class="roster-filter"
+            label="Search"
+            v-model="search"
+            box
+            class="roster-filter"
             ></v-text-field>
           </v-toolbar-title>
           <v-spacer></v-spacer>
@@ -35,6 +35,24 @@
         </v-expansion-panel>
 
       </v-card>
+    </v-flex>
+    <v-flex xs12 sm8 lg7 offset-sm1>
+      <div class="member-card">
+      <div class="avi-holder">
+          <v-avatar size="400px">
+            <img src="/static/images/amber.jpg">
+          </v-avatar>
+      </div>
+      <div class="member-bio">
+        <h3>this is the bio header</h3>
+        <div class="member-links">
+          <h5 class="linkage">@amberhartlin</h5>
+          <h5 class="linkage">twitch.tv/amberhartlin</h5>
+          <h5 class="linkage">other links</h5>
+        </div>
+        <p>this is where you would put all the bio innformationn. it's super special and shit</p>
+      </div>
+    </div>
     </v-flex>
   </v-layout>
 </template>
@@ -75,8 +93,42 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+/*to me moved*/
+.avi-holder{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-image: url("/static/images/Amber_Header.png");
+  background-size: cover;
+}
+.member-bio{
+  height: 300px;
+  width: 100%;
+  background-color: #191717;
+}
+.member-card{
+  box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 2px 2px rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+  color: #bdbdbd;
+}
+.member-links{
+  display: flex;
+}
+.linkage{
+  margin-right: 1em;
+}
+.member-bio > p {
+  font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
 .roster-list {
-  margin-bottom: 5em;
+ /* margin-bottom: 5em;*/
   height: 52em;
   overflow-y: scroll;
 }
@@ -120,7 +172,7 @@
   flex: 2;
 }
 .roster-title {
-  
+
   font-size: 1.5em;
   display: flex;
   align-items: center;

@@ -34,10 +34,10 @@ body{
   background-attachment: fixed;
   font-family: 'NexaBold' !important;
 }
-.ui-view{
+/*.ui-view{
   padding-top: 15em;
   margin-top: -10em;
-}
+}*/
 .nav-full{
   background: rgba(0,0,0,.6);
   height:8em !important;
