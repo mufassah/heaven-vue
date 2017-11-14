@@ -23,6 +23,12 @@
 </script>
 
 <style>
+@font-face {
+  font-family: 'gilroy';
+  src: url('./assets/fonts/Gilroy-ExtraBold.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
 #app {
 
 }
@@ -32,7 +38,9 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: 'NexaBold' !important;
+  font-family: 'gilroy', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 /*.ui-view{
   padding-top: 15em;

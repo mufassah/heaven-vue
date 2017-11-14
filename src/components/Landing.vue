@@ -7,7 +7,7 @@
           <h2 class="twitter-header-1">TWITTER</h2>
           <h2 class="twitter-header-2">FEED</h2>
           <div class="twitter-width">
-            <!-- <a class="twitter-timeline" data-height="350" data-theme="dark" data-chrome="noheader nofooter noborders" href="https://twitter.com/HeavenClan_"></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+            <a class="twitter-timeline" data-height="350" data-theme="dark" data-chrome="noheader nofooter noborders" href="https://twitter.com/HeavenClan_"></a> <script2 async src="//platform.twitter.com/widgets.js" charset="utf-8"></script2>
           </div>
         </div>
       </div>
