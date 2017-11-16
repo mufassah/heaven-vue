@@ -51,7 +51,7 @@
       return {
          items: [
          { avatar: '/static/images/amber.jpg', title: 'Amber', subtitle: 'Admin', comp: AmberBio, bgImg: '/static/images/Amber_Header.png' },
-        { avatar: '/static/images/kairazy.png', title: 'Kairazy', subtitle: 'Admin/Player', comp: KairazyBio, bgImg: '/static/images/Amber_Header.png' },
+        { avatar: '/static/images/kairazy.png', title: 'Kairazy', subtitle: 'Admin/Player', comp: KairazyBio, bgImg: '/static/images/Kai_Header.jpg' },
         { avatar: '/static/images/austin.jpg', title: 'Mufassah', subtitle: 'Admin/Web Designer', comp: MufassahBio, bgImg: '/static/images/Austin_Header.jpg' },
         { avatar: '/static/images/evers.jpg', title: 'Evers', subtitle: 'Player', comp: EversBio, bgImg: '/static/images/Amber_Header.png' },
         { avatar: '/static/images/slightlygifted.jpg', title: 'Slightly Gifted', subtitle: 'Player', comp: SlightlyGiftedBio, bgImg: '/static/images/Amber_Header.png' },

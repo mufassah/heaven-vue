@@ -9,8 +9,8 @@
       <div class="member-bio">
         <h3>this is the bio header</h3>
         <div class="member-links">
-          <h5 class="linkage">@amberhartlin</h5>
-          <h5 class="linkage">twitch.tv/amberhartlin</h5>
+          <h5 class="linkage">@Kairazy_</h5>
+          <h5 class="linkage">twitch.tv/kairazy</h5>
           <h5 class="linkage">other links</h5>
         </div>
         <p>this is where you would put all the bio information. it's super special and shit</p>
