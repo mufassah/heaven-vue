@@ -1,5 +1,4 @@
 <template>
-  <v-layout row>
     <v-flex xs12 sm4 lg2 offset-sm1 class="roster-list scroller">
       <v-card>
         <v-toolbar class="roster-header">
@@ -17,7 +16,7 @@
         </v-toolbar>
         <v-expansion-panel class="roster-body" popout>
           <v-expansion-panel-content v-for="(item,i) in filteredItems" :key="i">
-            <div slot="header" class="roster-item">
+            <div slot="header" class="roster-item" v-on:click="setActiveMember(item)">
               <v-avatar class="roster-avi">
                 <img v-bind:src="item.avatar">
               </v-avatar>
@@ -36,49 +35,22 @@
 
       </v-card>
     </v-flex>
-    <v-flex xs12 sm8 lg7 offset-sm1>
-      <div class="member-card">
-      <div class="avi-holder">
-          <v-avatar size="400px">
-            <img src="/static/images/amber.jpg">
-          </v-avatar>
-      </div>
-      <div class="member-bio">
-        <h3>this is the bio header</h3>
-        <div class="member-links">
-          <h5 class="linkage">@amberhartlin</h5>
-          <h5 class="linkage">twitch.tv/amberhartlin</h5>
-          <h5 class="linkage">other links</h5>
-        </div>
-        <p>this is where you would put all the bio innformationn. it's super special and shit</p>
-      </div>
-    </div>
-    </v-flex>
-  </v-layout>
+    
 </template>
 
 <script>
   export default {
     name: 'team-members',
+    props: ['items'],
     data () {
       return {
-        search: '',
-        items: [
-        { avatar: '/static/images/kairazy.png', title: 'Kairazy', subtitle: 'Admin/Player' },
-        { avatar: '/static/images/austin.jpg', title: 'Mufassah', subtitle: 'Admin/Web Designer' },
-        { avatar: '/static/images/evers.jpg', title: 'Evers', subtitle: 'Player' },
-        { avatar: '/static/images/slightlygifted.jpg', title: 'Slightly Gifted', subtitle: 'Player' },
-        { avatar: '/static/images/amber.jpg', title: 'Amber', subtitle: 'Admin' },
-        { avatar: '/static/images/apuithy.jpg', title: 'Apuithy', subtitle: 'Player' },
-        { avatar: '/static/images/blightful.jpg', title: 'Blightful', subtitle: 'Player' },
-        { avatar: '/static/images/cyn.jpg', title: 'Cyn', subtitle: 'Admin/Designer' },
-        { avatar: '/static/images/adrian.jpg', title: 'Adrian', subtitle: 'Player' },
-        { avatar: '/static/images/adam.jpg', title: 'Adam', subtitle: 'Player' },
-        { avatar: '/static/images/meep.jpg', title: 'Meep', subtitle: 'Player' },
-        { avatar: '/static/images/sean.jpg', title: 'Sean', subtitle: 'Designer/Player' },
-        { avatar: '/static/images/snuggs.jpg', title: 'Snuggs', subtitle: 'Admin/Player' },
-        { avatar: '/static/images/scene.jpg', title: 'ThaScene', subtitle: 'Player' }
-        ]
+        search: ''
+      }
+    },
+    methods:{
+      setActiveMember (member) {
+        console.log(member)
+        this.$emit('active-member', member)
       }
     },
     computed: {
@@ -93,40 +65,6 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-/*to me moved*/
-.avi-holder{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  background-image: url("/static/images/Amber_Header.png");
-  background-size: cover;
-}
-.member-bio{
-  height: 300px;
-  width: 100%;
-  background-color: #191717;
-}
-.member-card{
-  box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 2px 2px rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
-  color: #bdbdbd;
-}
-.member-links{
-  display: flex;
-}
-.linkage{
-  margin-right: 1em;
-}
-.member-bio > p {
-  font-size: 1.2em;
-}
-
-
-
-
-
-
-
-
 .roster-list {
  /* margin-bottom: 5em;*/
   height: 52em;
