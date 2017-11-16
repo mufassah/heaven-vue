@@ -6,7 +6,7 @@
             <img :src="avi">
           </v-avatar>
       </div>
-      <div class="member-bio">
+      <div class="member-bio flex-bio">
         <h3>this is the bio header</h3>
         <div class="member-links">
           <h5 class="linkage">@amberhartlin</h5>
@@ -39,6 +39,13 @@
   justify-content: space-around;
   /*background-image: url("/static/images/Amber_Header.png");*/
   background-size: cover;
+  border-radius: 25px 25px 0px 0px;
+}
+.member-bio{
+  height: 300px;
+  width: 100%;
+  background-color: #191717;
+  border-radius: 0px 0px 25px 25px;
 }
 .member-bio{
   height: 300px;

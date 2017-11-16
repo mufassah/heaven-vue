@@ -6,6 +6,8 @@ import 'vuetify/dist/vuetify.min.css'
 import App from './App'
 import router from './router'
 import VueScript2 from 'vue-script2'
+import Icon from 'vue-awesome/components/Icon'
+Vue.component('icon', Icon)
 Vue.use(Vuetify)
 Vue.use(VueScript2)
 

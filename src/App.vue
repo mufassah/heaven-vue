@@ -70,11 +70,11 @@ a.nav-logo:visited {
   } 
 a.nav-logo:hover{
   text-decoration: none;
-  color: #e5c300;
+  color: #ffdb4d;
 }
 a.nav-logo:active{
   text-decoration: none;
-  color: #e5c300;
+  color: #ffdb4d;
 }
 #header{
   margin-top: 2em;
@@ -84,7 +84,7 @@ a.nav-logo:active{
   display:flex;
 }
 .heaven-yellow{
-  color: #e5c300;   
+  color: #ffdb4d;   
 }
 .heaven-white{
   color: white;
@@ -127,11 +127,11 @@ a.nav-link:visited {
   } 
 a.nav-link:hover{
   text-decoration: none;
-  color: #e5c300;
+  color: #ffdb4d;
 }
 a.nav-link:active{
   text-decoration: none;
-  color: #e5c300;
+  color: #ffdb4d;
 }
 
 </style>

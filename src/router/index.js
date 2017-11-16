@@ -4,6 +4,7 @@ import Landing from '@/components/Landing'
 import Watch from '@/components/Watch'
 import News from '@/components/News'
 import Roster from '@/components/Roster'
+import 'vue-awesome/icons'
 
 Vue.use(Router)
 
