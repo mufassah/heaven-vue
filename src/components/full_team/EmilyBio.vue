@@ -6,7 +6,7 @@
             <img :src="avi">
           </v-avatar>
       </div>
-      <div class="member-bio">
+      <div class="member-bio flex-bio">
         <h3>this is the bio header</h3>
         <div class="member-links">
           <h5 class="linkage">@amberhartlin</h5>
@@ -33,17 +33,26 @@
 </script>
   <style>
   /*to me moved*/
+
+.flex-bio {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+}
 .avi-holder{
   width: 100%;
   display: flex;
   justify-content: space-around;
   /*background-image: url("/static/images/Amber_Header.png");*/
   background-size: cover;
+  border-radius: 25px 25px 0px 0px;
 }
 .member-bio{
   height: 300px;
   width: 100%;
   background-color: #191717;
+  border-radius: 0px 0px 25px 25px;
 }
 .member-card{
   box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 2px 2px rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
