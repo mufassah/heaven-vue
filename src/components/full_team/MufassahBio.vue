@@ -96,9 +96,11 @@ a:hover {
 }
 .member-links{
   display: flex;
+  margin-bottom: 1em;
 }
 .linkage{
   margin-right: 1em;
+  margin-bottom: 0 !important;
 }
 .member-bio > p {
   font-size: 1.2em;
