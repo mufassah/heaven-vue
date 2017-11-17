@@ -1,28 +1,34 @@
 <template>
-<v-flex xs12 sm8 lg7 offset-sm1>
-      <div class="member-card">
+  <v-flex xs12 sm8 lg7 offset-sm1>
+    <div class="member-card">
       <div class="avi-holder" v-bind:style="{ backgroundImage: 'url(' + bgImg + ')' }">
-          <v-avatar size="400px">
-            <img :src="avi">
-          </v-avatar>
+        <v-avatar size="400px">
+          <img :src="avi">
+        </v-avatar>
       </div>
       <div class="member-bio flex-bio">
         <h3>this is the bio header</h3>
         <div class="member-links">
-          <icon name="twitter" class="twitter scaled">
-          </icon>
+
           <a href="https:www.twitter.com/mufassahTV">
-            <h5 class="linkage">MufassahTV</h5>
+            <div class="icon-link">
+              <icon name="twitter" class="twitter scaled">
+              </icon>
+              <h5 class="linkage">MufassahTV</h5>
+            </div>
           </a>
-          <icon name="twitch" class="twitch scaled"></icon>
-            <a href="https://www.twitch.tv/mufassah">
+          
+          <a href="https://www.twitch.tv/mufassah">
+            <div class="icon-link">
+              <icon name="twitch" class="twitch scaled"></icon>
               <h5 class="linkage">Mufassah</h5>
-            </a>
+            </div>
+          </a>
         </div>
         <p>Mufassah's Bio</p>
       </div>
     </div>
-    </v-flex>
+  </v-flex>
 
   </template>
 
@@ -96,5 +102,8 @@ a:hover {
 }
 .member-bio > p {
   font-size: 1.2em;
+}
+.icon-link {
+  display: flex;
 }
 </style>

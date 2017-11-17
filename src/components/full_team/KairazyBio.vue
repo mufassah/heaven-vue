@@ -9,15 +9,10 @@
       <div class="member-bio flex-bio">
         <h3>this is the bio header</h3>
         <div class="member-links">
-<<<<<<< HEAD
+
           <h5 class="linkage">@Kairazy_</h5>
           <h5 class="linkage">twitch.tv/kairazy</h5>
-=======
-          <h5 class="linkage">@amberhartlin</h5>
-          <div>
-            <h5 class="linkage">twitch.tv/amberhartlin</h5>
-          </div>
->>>>>>> 3075c7f78c5224bdda0653d193ea64f89c1afa4c
+
           <h5 class="linkage">other links</h5>
         </div>
         <p>this is where you would put all the bio information. it's super special and shit</p>
