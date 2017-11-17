@@ -86,9 +86,14 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .component-fade-enter-active, .component-fade-leave-active {
-  transition: opacity .3s ease;
+  transition: all .3s ease;
 }
-.component-fade-enter, .component-fade-leave-to{
+.component-fade-enter {
+  transform: translateX(3em);
+  opacity: 0;
+}
+.component-fade-leave-to {
+  transform: translateX(-3em);
   opacity: 0;
 }
 </style>
