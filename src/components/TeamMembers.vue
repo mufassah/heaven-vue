@@ -14,9 +14,9 @@
           <v-spacer></v-spacer>
           
         </v-toolbar>
-        <v-expansion-panel class="roster-body" popout>
-          <v-expansion-panel-content v-for="(item,i) in filteredItems" :key="i">
-            <div slot="header" class="roster-item" v-on:click="setActiveMember(item)">
+        
+          <div v-for="item in filteredItems">
+            <div class="roster-item" v-on:click="setActiveMember(item)" :class="{ activeMem: isActive(item.title) }">
               <v-avatar class="roster-avi">
                 <img v-bind:src="item.avatar">
               </v-avatar>
@@ -28,10 +28,8 @@
                   {{ item.subtitle}}
                 </div>
               </div>
-            </div>
-            
-          </v-expansion-panel-content>
-        </v-expansion-panel>
+            </div> 
+          </div>
 
       </v-card>
     </v-flex>
@@ -41,7 +39,7 @@
 <script>
   export default {
     name: 'team-members',
-    props: ['items'],
+    props: ['items', 'activeMember'],
     data () {
       return {
         search: ''
@@ -51,6 +49,9 @@
       setActiveMember (member) {
         console.log(member)
         this.$emit('active-member', member)
+      },
+      isActive (memName) {
+        return this.activeMember.title === memName
       }
     },
     computed: {
@@ -69,27 +70,18 @@
  /* margin-bottom: 5em;*/
   height: 52em;
   overflow-y: scroll;
+  color: #bdbdbd;
+  background-color: black;
+  box-shadow: 0 12px 5px rgba(0,0,0,.2), 0 2px 2px rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
 }
 .roster-header{
   background-color: #212121;
   color: #bdbdbd;
 }
-.input-group {
-  padding: 1.4em 0 0 !important;
-}
-.input-group__details:after {
-  background-color: #bdbdbd !important;
-}
-.input-group.input-group--text-field:not(.input-group--single-line):not(.input-group--error).input-group--focused label {
-  color: #bdbdbd !important;
-}
-.input-group--text-field input {
-  caret-color: #bdbdbd !important;
-}
-.input-group__input {
-  background: hsla(0,0%,100%,.1) !important;
-}
 
+.activeMem {
+  background-color: #353535 !important;
+}
 .roster-header.toolbar {
   display: flex !important;
   justify-content: center !important;
@@ -102,6 +94,15 @@
 .roster-item{
   display: flex;
   justify-content: space-around;
+  background-color: #212121;
+  margin-top: .2em;
+  margin-bottom: .2em;
+  height: 5em;
+  display: flex;
+  align-items: center;
+}
+.roster-item:hover {
+  cursor: pointer;
 }
 .roster-avi {
   flex: 1;
@@ -115,18 +116,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}
-.expansion-panel__header > div > i {
-  display: none;
-}
-.expansion-panel__container {
-  border-bottom: 1px groove #424242;
-}
-.expansion-panel__container:hover {
-  background-color: #191717;
-}
-.expansion-panel__container.expansion-panel__container--active {
-  background-color: #191717;
 }
 
 /* scrollbar */
@@ -146,4 +135,34 @@
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   background-color: #3c3a3a;
 }
+
+.input-group {
+  padding: 1.4em 0 0 !important;
+}
+.input-group__details:after {
+  background-color: #bdbdbd !important;
+}
+.input-group.input-group--text-field:not(.input-group--single-line):not(.input-group--error).input-group--focused label {
+  color: #bdbdbd !important;
+}
+.input-group--text-field input {
+  caret-color: #bdbdbd !important;
+}
+.input-group__input {
+  background: hsla(0,0%,100%,.1) !important;
+}
+/*expansion panel*/
+/*.expansion-panel__header > div > i {
+  display: none;
+}
+.expansion-panel__container {
+  border-bottom: 1px groove #424242;
+}
+.expansion-panel__container:hover {
+  background-color: #191717;
+}
+.expansion-panel__container.expansion-panel__container--active {
+  background-color: #191717;
+}
+*/
 </style>

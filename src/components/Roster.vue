@@ -1,7 +1,7 @@
 <template>
   <div id='roster'>
     <v-layout row>
-    <team-members v-bind:items='items' v-on:active-member='setActiveMember'></team-members>
+    <team-members v-bind:items='items, activeMember' v-on:active-member='setActiveMember'></team-members>
     <transition name="component-fade" mode="out-in">
       <component v-bind:is="currentView" v-bind:member='activeMember'></component>
     </transition>
