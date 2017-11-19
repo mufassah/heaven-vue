@@ -87,7 +87,7 @@
     width: 300px;
 }
 .twitter-header-1{
-    color: #e5c300;
+    color: #ffdb4d;
     text-align: center;
     margin-bottom: -.5em;
 }
@@ -115,7 +115,7 @@
     margin-bottom: .5em;
 }
 .news-header1{
-    color: #e5c300;
+    color: #ffdb4d;
 }.news-header2{
     color: white;
 }

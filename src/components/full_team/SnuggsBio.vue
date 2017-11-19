@@ -88,6 +88,7 @@ a:hover {
   height: 300px;
   width: 100%;
   background-color: #191717;
+  border-radius: 0px 0px 25px 25px;
 }
 .member-card{
   overflow: hidden;
