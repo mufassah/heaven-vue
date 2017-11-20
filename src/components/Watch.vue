@@ -70,7 +70,7 @@
   color: white;
 }
 .watch-nav > a:hover {
-  color: #e5c300;
+  color: #ffdb4d;
 }
 .watch-nav-img{
     width: 4em;
@@ -88,7 +88,7 @@
   max-width: 30em;
   flex: 1;
   height: 45em;
-  box-shadow: 1px 3px 7px #f08b15;
+  box-shadow: 1px 3px 7px #ffdb4d;
 }
 .chat_embed > iframe {
   width: inherit;
@@ -98,7 +98,7 @@
   max-width: 82em;
   flex: 3;
   height: 45em;
-  box-shadow: 1px 3px 7px #f08b15;
+  box-shadow: 1px 3px 7px #ffdb4d;
 }
 .stream_embed > iframe {
   width: inherit;
