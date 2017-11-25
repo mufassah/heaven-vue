@@ -73,9 +73,9 @@ a:hover {
 }
 .flex-bio {
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .avi-holder{
   width: 100%;

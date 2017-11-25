@@ -2,18 +2,34 @@
   <div>
     <div class="watch-nav-holder">
       <div class="watch-nav">
+        <a data-position="top" data-delay="50" data-tooltip="Evers" class="tooltipped" v-on:click="changeChannel('evers')">
+          <img src="../assets/temps/evers.jpg" class="watch-nav-img"/>
+        </a>
+        <a data-position="top" data-delay="50" data-tooltip="SlightlyGifted" class="tooltipped" v-on:click="changeChannel('slightlygifted')">
+          <img src="../assets/temps/slightlygifted.jpg" class="watch-nav-img"/>
+        </a>
+        <a data-position="top" data-delay="50" data-tooltip="Blightful" class="tooltipped" v-on:click="changeChannel('blightful')">
+          <img src="../assets/temps/blightfulOptimized.png" class="watch-nav-img"/>
+        </a>
+        <a data-position="top" data-delay="50" data-tooltip="Mufassah" class="tooltipped" v-on:click="changeChannel('mufassah')">
+        <img src="../assets/temps/austin.jpg" class="watch-nav-img"/>
+        </a>
+        <a data-position="top" data-delay="50" data-tooltip="Jafooly" class="tooltipped" v-on:click="changeChannel('jafooly1992')">
+          <img src="../assets/temps/adam.jpg" class="watch-nav-img"/>
+        </a>
+        <a data-position="top" data-delay="50" data-tooltip="Amber" class="tooltipped" v-on:click="changeChannel('amberhartlin')">
+          <img src="../assets/temps/amber.jpg" class="watch-nav-img"/>
+        </a>
+        <a data-position="top" data-delay="50" data-tooltip="Adrian" class="tooltipped" v-on:click="changeChannel('censoredttv')">
+          <img src="../assets/temps/adrian.jpg" class="watch-nav-img"/>
+        </a>
         <a data-position="top" data-delay="50" data-tooltip="Kairazy" class="tooltipped" v-on:click="changeChannel('kairazy')">
           <img src="../assets/temps/kairazy.png" class="watch-nav-img"/>
         </a>
-        <a data-position="top" data-delay="50" data-tooltip="LCS" class="tooltipped" v-on:click="changeChannel('NALCS1')">
-          <img src="../assets/temps/lcs.png" class="watch-nav-img"/>
+        <a data-position="top" data-delay="50" data-tooltip="ThaScene" class="tooltipped" v-on:click="changeChannel('thascxne')">
+          <img src="../assets/temps/thaSceneOptimized.png" class="watch-nav-img"/>
         </a>
-        <a data-position="top" data-delay="50" data-tooltip="MLG" class="tooltipped" v-on:click="changeChannel('mlg')">
-          <img src="../assets/temps/mlg.png" class="watch-nav-img"/>
-        </a>
-        <a data-position="top" data-delay="50" data-tooltip="TSM SmaK" class="tooltipped" v-on:click="changeChannel('tsm_smak')">
-          <img src="../assets/temps/smak.png" class="watch-nav-img"/>
-        </a>
+      </a>
       </div>
     </div>
     <div class="watch-container">
@@ -32,9 +48,9 @@
     name: 'watch',
     data () {
       return {
-        channel: 'kairazy',
-        streamUrl: "https://player.twitch.tv/?channel=kairazy&amp;muted=false",
-        chatUrl: "https://www.twitch.tv/kairazy/chat" 
+        channel: 'evers',
+        streamUrl: "https://player.twitch.tv/?channel=evers&amp;muted=false",
+        chatUrl: "https://www.twitch.tv/evers/chat" 
       }
     },
     methods: {
