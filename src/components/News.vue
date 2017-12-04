@@ -1,7 +1,10 @@
 <template>
 <div class="carousel-holder">
-  <v-carousel hide-controls interval="10000">
-    <v-carousel-item v-for="(item,i) in items" v-bind:src="item.src" :key="i"></v-carousel-item>
+  <v-carousel id="carousel" hide-controls interval="10000">
+    <v-carousel-item v-for="(item,i) in items"
+     v-bind:src="item.src"
+      :key="i">
+      </v-carousel-item>
   </v-carousel>
  </div>
 </template>
@@ -39,7 +42,7 @@ export default {
 	display: flex;
 	justify-content: center;
 }
-.carousel {
-	width: 70% !important;
+#carousel {
+	width: 70%;
 }
 </style>

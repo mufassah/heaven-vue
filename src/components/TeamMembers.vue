@@ -1,7 +1,7 @@
 <template>
-    <v-flex xs12 sm4 lg2 offset-sm1 class="roster-list scroller">
+    <v-flex xs12 sm4 lg2 offset-sm1 id="scroller" class="roster-list">
       <v-card>
-        <v-toolbar class="roster-header">
+        <v-toolbar id="roster-header">
 
           <v-toolbar-title>
             <v-text-field
@@ -82,10 +82,10 @@
 .activeMem {
   background-color: #353535 !important;
 }
-.roster-header.toolbar {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+#roster-header.toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .roster-body{
   background-color: #2d2929;
@@ -119,10 +119,10 @@
 }
 
 /* scrollbar */
-.scroller::-webkit-scrollbar-track
+#scroller::-webkit-scrollbar-track
 {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  border-radius: 10px !important;
+  border-radius: 10px;
   background-color: #7f7878;
 }
 .scroller::-webkit-scrollbar

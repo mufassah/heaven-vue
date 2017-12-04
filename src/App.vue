@@ -1,12 +1,14 @@
 <template>
   <div id="app">
     <nav class= "nav-full">
-      <div class="nav-flex"> 
+      <div class="nav-flex-logo"> 
         <a class="nav-logo" href="/#/"><img src="./assets/Heaven_Logo.png" id="header"></a>
-        <a class="heaven-clan nav-logo" href="/#/"><div class="logo-flex"><div class="heaven-yellow">HEAVEN &nbsp;</div><div class="heaven-white">CLAN</div></div></a>
+        <a class="heaven-clan nav-logo" href="/#/"><div class="logo-flex"> 
+          <div class="heaven-yellow">HEAVEN &nbsp;</div> <div class="heaven-white">CLAN</div></div></a>
       </div>
-      <div class="nav-flex2">
-        <div class="nav-items"><a class="nav-link" href="/#/roster">TEAM</a></div>
+      <div class="nav-flex-text">
+          <div class="nav-items"><a class="nav-link" href="/#/roster">TEAM</a>
+          </div>
         <div class="nav-items"><a class="nav-link" href="/#/news">NEWS</a></div>
         <div class="nav-items"><a class="nav-link" ui-sref="about">ABOUT</a></div>
         <div class="nav-items"><a class="nav-link" href="/#/watch">WATCH</a></div>
@@ -46,12 +48,15 @@ body{
   padding-top: 15em;
   margin-top: -10em;
 }*/
+.yellow {
+  color: #ffdb4d;
+}
 .nav-full{
   background: rgba(0,0,0,.6);
   height:8em !important;
   padding-top:.2em;
   padding-bottom:.2em;
-  display:flex;
+  display: flex;
   color: white;
   margin-bottom: 5em;
   }
@@ -96,15 +101,15 @@ a.nav-logo:active{
 .heaven-clan:hover{
   text-decoration: none;
 }
-.nav-flex2{
+.nav-flex-text{
   display: flex;
   justify-content: flex-end;
   flex:1;
   align-items: center;
   font-size: 1.7em;
 }
-.nav-flex{
-  display: flex !important;
+.nav-flex-logo{
+  display: flex;
   align-items: center;
   flex: 1;
 }

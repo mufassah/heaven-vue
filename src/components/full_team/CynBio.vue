@@ -76,6 +76,7 @@ a:hover {
   flex-wrap: nowrap;
   align-items: center;
   flex-direction: column;
+  flex: 0 1 auto;
 }
 .avi-holder{
   width: 100%;
